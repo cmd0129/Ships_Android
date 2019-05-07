@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.b5400.statki.Instrukcja"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="13dp"
+        android:background="#56003399"
+        android:padding="20dp"
+        android:text="
+Każdy z graczy posiada po dwie plansze o wielkości 10x10 pól.
+Kolumny są oznaczone poprzez współrzędne literami od A do J i liczbami 1 do 10.
+Na jednym z kwadratów gracz losuje układ swoich statków, których położenie będzie odgadywał przeciwnik.
+Na drugim zaznacza trafione statki przeciwnika i oddane przez siebie strzały.
+Statki ustawiane są w pionie lub poziomie, w taki sposób aby nie stykały się one ze sobą ani bokami, ani rogami.
+Okręty są różnej wielkości i gracze posiadają po jednym czteromasztowcu wielkości czterech kratek, dwóch trójmasztowcach wielkości trzech kratek, trzech dwumasztowcach o wielkości dwóch kratek i po czterech jednomasztowcach.
+Trafienie okrętu przeciwnika polega na strzale, który jest odgadnięciem położenia jakiegoś statku.
+Strzały oddawane są naprzemiennie, poprzez kliknięcie na polu przeciwnika (np. B5).
+W przypadku strzału trafionego, gracz kontynuuje strzelanie (czyli swój ruch) aż do momentu chybienia.
+Zatopienie statku ma miejsce wówczas, gdy gracz odgadnie położenie całego statku. O chybieniu system informuje przeciwnika słowem „pudło”
+i odtworzeniem odpowiedniego dźwięku, o trafieniu „trafiony” lub „zatopiony”, również odtwarza odpowiedni dźwięk.
+Wygrywa ten, kto pierwszy zatopi wszystkie statki przeciwnika."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        android:text="Zasady gry:"
+        android:textColor="#FFFFFF"
+        android:textSize="70px" />
+</RelativeLayout>
